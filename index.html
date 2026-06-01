@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Survey Form</h1>
+        <p>ご協力お願いします.</p>
+      </header>
+      <form class="Survey">
+        <div class="form">
+          <label class="ch" for="name">Name :</label>
+          <input
+            id="name"
+            type="text"
+            placeholder="Enter your Name :"
+            name="name"
+            required
+          />
+        </div>
+        <div class="form">
+          <label class="ch" for="email">Email :</label>
+          <input
+            id="email"
+            type="email"
+            placeholder="Enter your Email :"
+            required
+            name="email"
+          />
+        </div>
+        <div class="form">
+          <label class="ch" for="number">Age :</label>
+          <input
+            type="number"
+            placeholder=" Enter your age :"
+            required
+            name="age"
+            id="number"
+            min="10"
+            max="90"
+          />
+        </div>
+        <div class="form">
+          <label class="ch" for="job">Job :</label>
+          <select id="job">
+            <option selected disabled value="">Choose your job</option>
+            <option value="Student">Student</option>
+            <option value="Freelancer">Freelancer</option>
+            <option value="Employee">Employee</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form">
+          <p>Do you Like our Restances</p>
+          <label for="yes">Yes</label>
+          <input id="yes" type="radio" name="rec" value="yes" required />
+          <label for="no">NO</label>
+          <input id="no" type="radio" name="rec" value="no" required />
+          <label for="maybe">Maybe</label>
+          <input id="maybe" type="radio" name="rec" value="yes" required />
+        </div>
+        <div class="form">
+          <p>What is your Favebrite</p>
+          <label for="cake">Cake</label>
+          <input type="checkbox" id="cake" name="cake" value="cake" />
+          <label for="drink">Drink</label>
+          <input type="checkbox" id="drink" name="drink" value="drink" />
+          <label for="de">Dessert</label>
+          <input type="checkbox" id="de" name="de" value="dessert" />
+        </div>
+        <div class="form">
+          <label class="ch" for="comm">Do you have any recommed</label>
+          <textarea id="comm"  placeholder="Text Here"></textarea>
+        </div>
+        <div class="form">
+          <button type="reset" value="reset" id="reset">Reset</button>
+          <button type="submit" value="submit" id="submit">Sumit</button>
+        </div>
+         
+      </form>
+    </div>
+  </body>
+</html>
